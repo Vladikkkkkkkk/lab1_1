@@ -1,0 +1,142 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header side"
+        "mainleft top side"
+        "mainleft main side"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 100px 1fr 100px;
+    height: 100vh;
+}
+
+/* Header Block */
+.block1 {
+    grid-area: header;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 100px;
+    text-align: center; /* Центрування тексту */
+}
+
+.left-text {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 10px; /* Відступ для тексту */
+}
+
+.header-right-corner {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    color: black;
+    padding: 5px;
+}
+
+/* Footer Block */
+.block6 {
+    grid-area: footer;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 100px;
+}
+
+.block6 h2 {
+    background-color: #f9fff9;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 24px;
+    text-align: right;
+}
+
+/* Side Menu */
+.block2 {
+    grid-area: side;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:end;
+    padding: 20px;
+}
+
+.block2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.block2 ul li {
+    margin-bottom: 10px;
+}
+
+.block2 ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Left Content */
+.block3 {
+    grid-area: mainleft;
+    background-color: peachpuff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: left; /* Вирівнювання тексту ліворуч */
+}
+
+.block3 h1 {
+    margin-bottom: 10px;
+}
+
+.block3 p {
+    font-size: 18px;
+    line-height: 1.5; /* Висота рядка для читабельності */
+}
+
+/* Top Block */
+.block4 {
+    grid-area: top;
+    background-color: mistyrose;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Main Content */
+.block5 {
+    grid-area: main;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* General Body Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Style for external links */
+a {
+    color: #0000FF;
+    text-decoration: underline;
+}
+
