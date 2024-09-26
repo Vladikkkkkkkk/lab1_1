@@ -49,6 +49,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 10px;
     height: 100px;
 }
 
@@ -127,6 +128,7 @@ body, html {
     padding: 0;
     height: 100%;
     box-sizing: border-box;
+    overflow-x: hidden; 
 }
 
 footer {
