@@ -9,62 +9,56 @@
 <body>
 
 <div class="container">
-    <!-- Header Block -->
-    <header class="block1">
+    <header class="header">
         <div class="left-text"><h1>Пивний магазин "Хміль"</h1></div>
         <div class="header-right-corner">
-            <p>Перегляньте фотографії нашого асортименту та закладу!</p>
+            <p>Перегляньте фотографії нашого асортименту!</p>
         </div>
     </header>
 
-    <!-- Sidebar and Navigation -->
-    <nav class="block2">
+    <nav class="navigation">
         <ul>
             <li><a href="index.html">Головна</a></li>
             <li><a href="products.html">Продукція</a></li>
             <li><a href="about.html">Про нас</a></li>
             <li><a href="contact.html">Контакти</a></li>
-            <li><a href="assortment.html">Асортимент</а></li>
+            <li><a href="assortment.html">Асортимент</a></li>
         </ul>
     </nav>
 
-    <!-- Left Block with Gallery Info -->
-    <div class="block3">
+    <div class="main-content">
         <h2>Фотогалерея</h2>
     </div>
 
-    <!-- Top Block for Additional Info -->
-    <div class="block4">
+    <div class="additional-content">
         <h3>Новинки</h3>
-        <p>Перегляньте наші нові продукти, представлені у фотогалереї.</p>
+        <p>Перегляньте наші нові пропозиції, представлені у фотогалереї.</p>
     </div>
 
-    <!-- Main Content Block with Images -->
-    <div class="block5">
+    <div class="sub-content">
         <div class="gallery-item">
-            <img src="images/svitle.jpg" alt="Світле пиво" width="300">
+            <img src="images/пиво світле.jpg" alt="Світле пиво" width="300">
             <p>Світле пиво</p>
         </div>
         <div class="gallery-item">
-            <img src="images/temne.jpg" alt="Темне пиво" width="300">
+            <img src="images/пиво темне.jpg" alt="Темне пиво" width="300">
             <p>Темне пиво</p>
         </div>
         <div class="gallery-item">
-            <img src="images/pshenychne.jpg" alt="Пшеничне пиво" width="300">
-            <p>Пшеничне пиво</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/zakusky.jpg" alt="Закуски до пива" width="300">
+            <img src="images/закуски.png" alt="Закуски до пива" usemap="#beermap" width="300">
             <p>Закуски до пива</p>
         </div>
+
+        <map name="beermap">
+            <area shape="rect" coords="0,0,300,300" alt="закуски" href="index.html">
+        </map>
     </div>
 
-    <!-- Footer Block -->
-    <footer class="block6">
+    <footer class="footer">
         <div class="footer-left-corner">
             <p>Адреса: вул. Пивна, 1, м. Львів, Україна</p>
             <p>Телефон: +380 12 345 67 89</p>
-            <p>Email: info@hmil.com.ua</p>
+            <p>Email: khmilbeershop@gmail.com</p>
         </div>
         <h2>Бережіть воду - пийте пиво!</h2>
     </footer>
